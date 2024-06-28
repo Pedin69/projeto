@@ -5,6 +5,7 @@
 }
 :root {
   --text-color: white;
+  --border-profile-color: white;
   --bg-url: url(./assets/bg-mobile.jpg);
   --stroke-color: rgb(255, 255, 255, 0.5);
   --surface-color: rgb(255, 255, 255, 0.1);
@@ -14,6 +15,7 @@
 }
 .light {
   --text-color: black;
+  --border-profile-color: rgba(0, 0, 0, 0.5);
   --bg-url: url(./assets/bg-mobile-light.jpg);
   --stroke-color: rgb(0, 0, 0, 0.5);
   --surface-color: rgb(0, 0, 0, 0.05);
@@ -45,6 +47,8 @@ body * {
 }
 #profile img {
   width: 112px;
+  border: 2px solid var(--border-profile-color);
+  border-radius: 50%;
 }
 #profile p {
   font-weight: 500;
